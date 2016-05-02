@@ -8,9 +8,17 @@ namespace SingletonPattern
 {
     class Program
     {
+                        //Make all constructors of the class private.
+                        //Create a private static member that’s of the same type of the class.
+                        //Create a public static member that returns and instance of that class.
+
         static void Main(string[] args)
-        {
+        { 
+
+            var X = PaymentService.GetInstance();
         }
+
+
             public class PaymentService
         {
             private static object _SyncRoot;
